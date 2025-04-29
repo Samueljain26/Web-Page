@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Page 2</title>
+</head>
+<body>
+<h2>Page2</h2>
+<form action="/page3" method="post">
+    First Name: <span th:text="${firstName}"></span><br><br>
+    Last Name: <span th:text="${lastName}"></span><br><br>
+
+    <input type="hidden" name="firstName" th:value="${firstName}">
+    <input type="hidden" name="lastName" th:value="${lastName}">
+
+    Email: <input type="email" name="email" required><br><br>
+    Phone Number: <input type="text" name="phoneNumber" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
